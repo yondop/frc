@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+  background-color: #EEEEEE;
+  font-family: 'Roboto', sans-serif;
+}
+
+.calculator {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 350px;
+  padding: 10px;
+
+  border-radius: 10px;
+  background-color: #1496BB;
+}
+
+.result, .btn {
+  background: #EEEEEE;
+}
+
+.result {
+  display: block;
+  border: none;
+  height: 50px;
+  line-height: 50px;
+  width: 310px;
+  margin: 10px auto;
+  padding: 0 5px;
+  text-align: right;
+  font-size: 22px;
+}
+
+.buttons {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.btn {
+  width: 74px;
+  height: 60px;
+  float: left;
+  border: none;
+  font-size: 28px;
+  margin: 3px;
+}
+
+.btn:nth-child(4n-3) {
+  margin-left: 0px;
+}
+
+.btn:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.btn-group {
+  width: 240px;
+  float: left;
+}
+
+.btn-group .btn:nth-child(4) {
+  margin-left: 0px;
+  margin-right: 3px;
+}
+
+.btn-group .btn:nth-child(5) {
+  margin-left: 3px;
+}
+
+.btn.btn-equal {
+  background: orange;
+  color: white;
+  height: 126px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
