@@ -2,13 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 
   </head>
   <body>
     <div class="clock-wrapper">
+      <div class="toolbar">
+        <div class="setup">
+          <div class="setup-header">break</div>
+          <div class="setup-container">
+            <button type="button" id="dec-break">-</button>
+            <div id="break-length">5</div>
+            <button type="button" id="inc-break">+</button>
+          </div>
+        </div>
+        <button type="button" id="reset"><i class="fa fa-refresh"></i></button>
+        <div class="setup">
+          <div class="setup-header">session</div>
+          <div class="setup-container">
+            <button type="button" id="dec-session">-</button>
+            <div id="session-length">25</div>
+            <button type="button" id="inc-session">+</button>
+          </div>
+        </div>
+      </div>
 
+      <div class="clock">
+        <div class="clock-info">
+          <div class="clock-header">
+            Session
+          </div>
+          <div class="clock-time">
+            25:00
+          </div>
+          <div class="clock-controls">
+            <button type="button" id="toggle"><i class="fa fa-play"></i></button>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="script.js"></script>
