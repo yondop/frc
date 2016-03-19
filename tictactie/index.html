@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <div class="side">
+          <div>
+            <input type="radio" id="radio-x" name="sideRadio" value="X" checked>
+            <label for="radio-x">X</label>
+          </div>
+          <div>
+            <input type="radio" id="radio-o" name="sideRadio" value="O">
+            <label for="radio-o">O</label>
+          </div>
+        </div>
+
+        <div class="score">
+          <div>PLAYER</div>
+          <div id="playerScore">0</div>
+        </div>
+        <div class="score">
+          <div>COMPUTER</div>
+          <div id="compScore">0</div>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="row">
+          <div class="square top left" num="20">
+            <span></span>
+          </div>
+          <div class="square top" num="21">
+            <span></span>
+          </div>
+          <div class="square top right" num="22">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="square top left" num="10">
+            <span></span>
+          </div>
+          <div class="square top" num="11">
+            <span></span>
+          </div>
+          <div class="square top right" num="12">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="square left" num="00">
+            <span></span>
+          </div>
+          <div class="square" num="01">
+            <span></span>
+          </div>
+          <div class="square right" num="02">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
