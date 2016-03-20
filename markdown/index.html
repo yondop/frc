@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="simon">
+        <ul>
+          <li class="tile red" data-tile="1"></li>
+          <li class="tile blue" data-tile="2"></li>
+          <li class="tile yellow" data-tile="3"></li>
+          <li class="tile green" data-tile="4"></li>
+        </ul>
+      </div>
+
+      <div class="menu">
+        <h2>Info: <span data-info="info">--</span></h2>
+        <h2>Round: <span data-info="round-count">0</span></h2>
+        <button data-info="start">Start</button>
+        <button data-info="strict">Strict</button>
+        <p class="game-over lose hide">You lost after <span data-info="round-count">0</span></p>
+        <p class="game-over win hide">You won!</p>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
