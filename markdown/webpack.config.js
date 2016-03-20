@@ -14,7 +14,7 @@ var config = {
   },
   module: {
     noParse: [
-       bower_dir + '/react/react.js'
+       bower_dir + '/react/react.min.js'
     ],
     loaders: [
     {
@@ -46,8 +46,8 @@ var config = {
 ]
 };
 
-config.addVendor('react', bower_dir + '/react/react.js');
-config.addVendor('react-dom', bower_dir + '/react/react-dom.js');
+config.addVendor('react', bower_dir + '/react/react.min.js');
+config.addVendor('react-dom', bower_dir + '/react/react-dom.min.js');
 config.addVendor('bootstrap.css', bower_dir + '/bootstrap/dist/css/bootstrap.min.css');
 config.addVendor('marked', bower_dir + '/marked/marked.min.js');
 config.addVendor('jquery', bower_dir + '/jquery/dist/jquery.min.js')
