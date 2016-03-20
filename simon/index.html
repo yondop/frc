@@ -10,17 +10,22 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="menu">
-
-      </div>
-
       <div class="simon">
         <ul>
-          <li class="red" data="1"></li>
-          <li class="blue" data="2"></li>
-          <li class="yellow" data="3"></li>
-          <li class="green" data="4"></li>
+          <li class="tile red" data-tile="1"></li>
+          <li class="tile blue" data-tile="2"></li>
+          <li class="tile yellow" data-tile="3"></li>
+          <li class="tile green" data-tile="4"></li>
         </ul>
+      </div>
+
+      <div class="menu">
+        <h2>Info: <span data-info="info">--</span></h2>
+        <h2>Round: <span data-info="round-count">0</span></h2>
+        <button data-info="start">Start</button>
+        <button data-info="strict">Strict</button>
+        <p class="game-over lose hide">You lost after <span data-info="round-count">0</span></p>
+        <p class="game-over win hide">You won!</p>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
