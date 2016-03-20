@@ -11,7 +11,7 @@ Alt-H1
 ======
 Alt-H2
 ------
-`
+`;
 
 export default React.createClass({
   updateValue: function(newValue) {
