@@ -14,7 +14,7 @@ var config = {
   },
   module: {
     noParse: [
-       bower_dir + '/react/react.min.js'
+       bower_dir + '/react/react.js'
     ],
     loaders: [
     {
@@ -46,7 +46,7 @@ var config = {
 ]
 };
 
-config.addVendor('react', bower_dir + '/react/react.min.js');
+config.addVendor('react', bower_dir + '/react/react.js');
 config.addVendor('react-dom', bower_dir + '/react/react-dom.min.js');
 
 
