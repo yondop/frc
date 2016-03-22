@@ -1,5 +1,5 @@
 $bg-color: #FFFFFF;
-$primary-bg-color: #333333;
+$primary-color: #333333;
 
 body {
   background-color: $bg-color;
@@ -7,22 +7,4 @@ body {
 
 .container {
   margin: 15px auto;
-
-  #info {
-    margin: 10px auto;
-
-    div {
-      margin: 10px;
-    }
-
-    .data {
-      border: 1px solid black;
-      padding: 10px;
-    }
-  }
-
-  #kmeans {
-    background-color: $primary-bg-color;
-    margin: 10px auto;
-  }
 }
