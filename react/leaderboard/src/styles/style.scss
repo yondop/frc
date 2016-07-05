@@ -1,0 +1,48 @@
+#app {
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #4d4d4d;
+  min-width: 550px;
+  max-width: 850px;
+  margin: 0 auto;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header {
+    font-size: 16px;
+    cursor: pointer;
+
+  }
+
+  img {
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+
+  td, th {
+    text-align: center;
+  }
+
+  th {
+    min-width: 30px;
+    background: #8a97a0;
+    color: #FFF;
+  }
+
+  td:nth-child(2), th:nth-child(2), td:nth-child(1), th:nth-child(1) {
+    text-align: left;
+  }
+
+  tr {
+    background: #f4f7f8;
+    border-bottom: 1px solid #FFF;
+  }
+
+  tr:nth-child(even) {
+    background: #e8eeef;
+  }
+
+}
