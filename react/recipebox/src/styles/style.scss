@@ -1,0 +1,54 @@
+#app {
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
+  background-color: #303F9F;
+  min-width: 550px;
+  max-width: 850px;
+  margin: 50px auto;
+  border-radius: 20px;
+  overflow: hidden;
+
+  .header {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .recipe {
+    padding: 15px 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    .title {
+      font-size: 24px;
+    }
+
+    .part {
+      display: inline-block;
+      padding: 5px;
+      background-color: #303F9F;
+      border-radius: 15%;
+      margin: 5px;
+    }
+  }
+
+  .recipe:hover, .recipe:hover {
+    top: 0px;
+    transition: all 0.2s ease;
+    padding-bottom: 20px;
+    margin-top: -10px;
+  }
+
+  .recipe:nth-child(2n) {
+    background-color: #2196F3;
+  }
+
+  .recipe:nth-child(2n+1) {
+    background-color: #1976D2;
+  }
+
+  .recipe-form {
+    padding: 30px;
+  }
+}
