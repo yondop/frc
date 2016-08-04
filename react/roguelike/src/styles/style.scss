@@ -1,0 +1,132 @@
+$large-width: 1200px;
+$medium-width:900px;
+$small-width: 768px;
+
+$bg-color: #212121;
+$text-color: #FFFFFF;
+$control-color: #0288D1;
+$control-border-color: #303F9F;
+
+@mixin small {
+  @media only screen and (min-width : $small-width) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media only screen and (min-width : $medium-width) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width : $large-width) {
+    @content;
+  }
+}
+
+body {
+  background-color: $bg-color;
+  color: $text-color;
+  #app {
+    svg, canvas {
+      display: block;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .toolbar {
+      display: flex;
+      margin: 12px auto;
+      align-items: stretch;
+
+      width: 365px;
+      height: 45px;
+      @include medium {
+        width: 450px;
+        height: 50px;
+      }
+
+      @include large {
+        width: 538px;
+      }
+
+      .button-control,
+      .label-control,
+      .select-control select{
+        font-size: 12px;
+        @include medium {
+          font-size: 14px;
+        }
+
+        @include large {
+          font-size: 16px;
+        }
+      }
+
+      .control{
+        background-color: $control-color;
+        border: none;
+        border-right: 1px solid $control-border-color;
+        color: $text-color;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        flex-grow: 2;
+        height: 100%;
+      }
+
+      .button-control {
+        padding: 10px 10px;
+        .fa {
+          margin-right: 5px;
+        }
+      }
+
+      .button-control:hover {
+      	opacity: 0.8;
+      }
+
+      .label-control {
+        vertical-align: middle;
+        border: 2px solid $control-color;
+        line-height: 46px;
+
+        width: 120px;
+        @include medium {
+          width: 140px;
+        }
+
+        @include large {
+          width: 160px;
+        }
+      }
+
+      .select-control {
+        select {
+          height: 100%;
+          width: 100%;
+          color: $text-color;
+          background: transparent;
+          border: none;
+          cursor: pointer;
+          option {
+            background-color: $bg-color;
+          }
+        }
+      }
+
+      .select-control:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .grid {
+      border-spacing: 0px;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+  }
+}
