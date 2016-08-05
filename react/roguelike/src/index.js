@@ -7,11 +7,12 @@ import './styles/style.scss';
 import 'font-awesome/css/font-awesome.css';
 import App from './components/App';
 import configureStore from './store/configureStore';
-import {setGrid} from './actions/boardActions';
-import {generateGrid} from './lib/generation';
+import {load} from './actions/gameActions';
+import grid from './constants/grid';
 
 let store = configureStore();
-store.dispatch(setGrid(generateGrid(store.getState().board.grid.length)));
+store.dispatch(load(grid));
+
 
 render(
   <Provider store={store}>
