@@ -1,0 +1,56 @@
+body {
+
+}
+
+.card {
+  .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  svg {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+
+    .axis {
+      font: 10px sans-serif;
+    }
+
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
+
+    .legend {
+      fill: steelblue;
+
+    }
+
+    .bar:hover {
+      stroke: #000000;
+      stroke-width: 2px;
+    }
+  }
+
+  .tooltip {
+    position: relative;
+    top: -250px;
+    left: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 190px;
+    background-color: #FFFFFF;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+
+    .amount {
+      font-weight: bold;
+    }
+  }
+}
